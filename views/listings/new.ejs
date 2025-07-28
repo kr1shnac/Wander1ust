@@ -17,10 +17,11 @@
           type="text"
           name="listing[title]"
           class="form-control"
-          placeholder="Enter your title"
+          placeholder="Name your place"
           required
         />
-        <div class="valid-feedback">Title looks good!</div>
+        <div class="valid-feedback">Great title!</div>
+        <div class="invalid-feedback">Title is required!</div>
       </div>
       <div class="mb-3">
         <label for="description" class="form-label">Description</label>
@@ -28,15 +29,23 @@
           type="text"
           name="listing[description]"
           class="form-control"
-          placeholder="Enter your description"
+          placeholder="Describe what makes your place special"
           required
         ></textarea>
-        <div class="invalid-feedback">Please enter a short description</div>
+        <div class="valid-feedback">Clear and helpful!</div>
+        <div class="invalid-feedback">Tell us something about your place!</div>
       </div>
       <div class="mb-3">
-        <label for="image" class="form-label">Upload Image</label>
-        <input type="file" name="listing[image]" class="form-control" />
-        required
+        <label for="image" class="form-label"
+          >Choose a photo of your place</label
+        >
+        <input
+          type="file"
+          name="listing[image]"
+          class="form-control"
+          required
+        />
+        <div class="invalid-feedback">Image is required</div>
       </div>
       <div class="row">
         <div class="mb-3 col-md-4">
@@ -45,10 +54,11 @@
             type="text"
             name="listing[price]"
             class="form-control"
-            placeholder="Enter your price"
+            placeholder="Set your price per night (INR)"
             required
           />
-          <div class="invalid-feedback">Price must be valid!</div>
+          <div class="valid-feedback">Price added!</div>
+          <div class="invalid-feedback">Enter a valid number (e.g., 1500)</div>
         </div>
         <div class="mb-3 col-md-8">
           <label for="country" class="form-label">Country</label>
@@ -56,10 +66,11 @@
             type="text"
             name="listing[country]"
             class="form-control"
-            placeholder="Enter your Country"
+            placeholder="Enter your country"
             required
           />
-          <div class="invalid-feedback">Country name must be valid!</div>
+          <div class="valid-feedback">Country added!</div>
+          <div class="invalid-feedback">Country is required</div>
         </div>
       </div>
       <div class="mb-3">
@@ -68,10 +79,11 @@
           type="text"
           name="listing[location]"
           class="form-control"
-          placeholder="Enter your Location"
+          placeholder="Where’s your place?"
           required
         />
-        <div class="invalid-feedback">Location must be valid!</div>
+        <div class="valid-feedback">Location added!</div>
+        <div class="invalid-feedback">Please enter where your place is</div>
       </div>
 
       <button class="btn btn-dark add-btn mt-3">Add</button>
