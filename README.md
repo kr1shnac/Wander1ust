@@ -4,7 +4,7 @@ A full-stack web development project to create, browse, and review short-stay li
 
 # 👉 Live_Demo:
 
-            wander1ust.onrender.com
+        wander1ust.onrender.com
 
 ---
 
@@ -70,7 +70,7 @@ npm start
 
 ---
 
-# 👤 Author
+# 👤 Meet the Developer
 
 # Krishna C
 
