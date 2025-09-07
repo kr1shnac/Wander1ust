@@ -53,11 +53,11 @@ Flash messages, validation, and friendly error handling.
 
 # ⚡ Getting Started
 
-- Clone and install
+Clone and install
 
-git clone <repo-url>
-cd wander1ust
-npm install
+- git clone <repo-url>
+- cd wander1ust
+- npm install
 
 - Add a .env file with:
 - ATLASDB_URL=...
