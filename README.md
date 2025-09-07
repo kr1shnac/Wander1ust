@@ -10,25 +10,20 @@ A full-stack web development project to create, browse, and review short-stay li
 
 # ✨ Features
 
-# Listings –
+Listings –
+Create, edit, and delete property listings with images, price, and location.
 
-    Create, edit, and delete property listings with images, price, and location.
+Secure_Authentication –
+Session-based signup/login/logout using Passport ensures only registered users can create or manage content (session handling).
 
-# Secure_Authentication –
+Reviews –
+Add star ratings and comments, with automatic cleanup on listing deletion.
 
-    Session-based signup/login/logout using Passport ensures only registered users can create or manage content (session handling).
+Image_Uploads –
+Store and manage images via Cloudinary with previews.
 
-# Reviews –
-
-    Add star ratings and comments, with automatic cleanup on listing deletion.
-
-# Image_Uploads –
-
-    Store and manage images via Cloudinary with previews.
-
-# User_Experience –
-
-    Flash messages, validation, and friendly error handling.
+User_Experience –
+Flash messages, validation, and friendly error handling.
 
 ---
 
@@ -58,20 +53,18 @@ A full-stack web development project to create, browse, and review short-stay li
 
 # ⚡ Getting Started
 
-# Clone and install
+- Clone and install
 
 git clone <repo-url>
 cd wander1ust
 npm install
 
-<!--
 - Add a .env file with:
 - ATLASDB_URL=...
 - SECRET=...
 - CLOUD_NAME=...
 - CLOUD_API_KEY=...
 - CLOUD_API_SECRET=...
--->
 
 npm start
 
