@@ -74,6 +74,6 @@ npm start
 
 # Krishna C
 
-    AI & ML Engineering Student
+    “The guy you are lookin’ for”
 
 ---
