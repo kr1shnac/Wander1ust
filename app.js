@@ -88,7 +88,7 @@ app.use("/listings", listingRouter); //route
 app.use("/listings/:id/reviews", reviewRouter); //route
 app.use("/", userRouter);
 
-app.all("{*splat}", (req, res, next) => {
+app.all("/{*splat}", (req, res, next) => {
   next(new ExpressError(404, "Page not Found!"));
 });
 
@@ -98,6 +98,7 @@ app.use((err, req, res, next) => {
   //res.status(statusCode).send(message);
 });
 
-app.listen(8080, () => {
-  console.log("serve is listining to port 8080");
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log(`server listening on ${port}`);
 });
