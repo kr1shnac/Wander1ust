@@ -1,79 +1,32 @@
-# Wander1ust — Airbnb-style Listings Platform
+# Wander1ust 🌍✈️
 
-A full-stack web development project to create, browse, and review short-stay listings with secure authentication and image uploads.
+**A Full-Stack Airbnb-style Listings Platform**
 
-# 👉 Live_Demo:
+Wander1ust is a comprehensive web application built to demonstrate full-stack development capabilities, featuring secure authentication, cloud-based image uploads, and session management.
 
-        wander1ust.onrender.com
-
----
-
-# ✨ Features
-
-Listings –
-Create, edit, and delete property listings with images, price, and location.
-
-Secure_Authentication –
-Session-based signup/login/logout using Passport ensures only registered users can create or manage content (session handling).
-
-Reviews –
-Add star ratings and comments, with automatic cleanup on listing deletion.
-
-Image_Uploads –
-Store and manage images via Cloudinary with previews.
-
-User_Experience –
-Flash messages, validation, and friendly error handling.
+🔗 **Live Demo:** [wander1ust.vercel.app](https://wander1ust.vercel.app)
 
 ---
 
-# 🛠 Tech_Stack
+## 🛠 Tech Stack & Architecture
 
-# Backend
-
-    Node.js, Express, MongoDB Atlas, Mongoose
-
-# Auth & Sessions
-
-    Passport, express-session, connect-mongo
-
-# Uploads & Storage
-
-    Multer + Cloudinary
-
-# Frontend
-
-    EJS, ejs-mate, Bootstrap
-
-# Deployment
-
-    Render
+- **Backend:** Node.js, Express.js (MVC Architecture)
+- **Database:** MongoDB Atlas, Mongoose ODM
+- **Authentication:** Passport.js (Local Strategy), Session Management (`express-session`, `connect-mongo`)
+- **Cloud Storage:** Cloudinary (via `multer-storage-cloudinary`)
+- **Frontend / Client Validation:** EJS (Templating), Bootstrap 5, Joi
+- **Deployment:** Vercel (Frontend & Serverless logic)
 
 ---
 
-# ⚡ Getting Started
+## 💡 Key Technical Achievements
 
-Clone and install
-
-- git clone <repo-url>
-- cd wander1ust
-- npm install
-
-- Add a .env file with:
-- ATLASDB_URL=...
-- SECRET=...
-- CLOUD_NAME=...
-- CLOUD_API_KEY=...
-- CLOUD_API_SECRET=...
-
-npm start
+- **Secure Session Management:** Implemented robust session-based authentication using Passport.js. Sessions are persisted securely in MongoDB using `connect-mongo`.
+- **Cloud Media Integration:** Integrated Cloudinary for scalable image uploads and efficient storage of listing photos.
+- **RESTful API Design:** Developed comprehensive CRUD operations for property listings and user reviews following REST principles.
+- **Data Integrity & Validation:** Enforced strict data validation rules on both the client and server sides using Joi to prevent malicious or malformed inputs.
+- **Database Relationship Management:** Managed complex Mongoose schema relations, handling cascading deletions (e.g., removing a listing's associated reviews when deleted).
 
 ---
 
-# 👤 Meet the Developer
-
-# Krishna C
-
-    “The guy you are lookin’ for”
-
----
+**Developed by: [Krishna C](https://krishnac.vercel.app/)** | *"The guy you are lookin' for"* 
