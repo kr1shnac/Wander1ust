@@ -99,10 +99,6 @@ app.use((err, req, res, next) => {
 });
 
 const port = process.env.PORT || 8080;
-if (process.env.NODE_ENV !== "production") {
-  app.listen(port, () => {
-    console.log(`server listening on ${port}`);
-  });
-}
-
-module.exports = app;
+app.listen(port, () => {
+  console.log(`server listening on ${port}`);
+});
