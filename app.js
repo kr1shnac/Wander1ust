@@ -64,10 +64,6 @@ const sessionOptions = {
   },
 };
 
-app.get("/", (req, res) => {
-  res.redirect("/listings");
-});
-
 app.use(session(sessionOptions));
 app.use(flash()); //use flash before routes
 
@@ -82,6 +78,10 @@ app.use((req, res, next) => {
   res.locals.error = req.flash("error");
   res.locals.currUser = req.user;
   next();
+});
+
+app.get("/", (req, res) => {
+  res.redirect("/listings");
 });
 
 app.use("/listings", listingRouter); //route
